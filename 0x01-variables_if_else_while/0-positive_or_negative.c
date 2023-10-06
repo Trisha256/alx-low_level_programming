@@ -3,9 +3,8 @@
 #include <stdio.>
 
 /**
- * main - print whether the number stored in the
- * variable n is positive or negative
- * Return: 0 Always.
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
 
 int main(void)

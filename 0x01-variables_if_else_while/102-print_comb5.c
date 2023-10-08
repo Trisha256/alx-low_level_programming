@@ -9,24 +9,33 @@
 
 int main(void)
 {
-	int a, b;
+	int i, j;
+	int a, b, c, d;
 
-	for (a = '0'; a <= 98; a++)
+	for (i = '0'; i <= 99; i++)
 	{
-
-	for (b = a + 1; b <= 99; b++)
+		a = i / 10;
+		b = i % 10;
+	for (j = '0'; j <= 99; j++)
 	{
-	putchar((a / 10) + '0');
-	putchar((a % 10) + '0');
-	putchar(' ');
-	putchar((b / 10) + '0');
-	putchar((b % 10) + '0');
-	if (a == 98 && b == 99)
-		continue;
-	putchar(',');
-	putchar(' ');
+		c = j / 10;
+		d = j % 10;
+		if (a < c || (a == c && b < d))
+		{
+			putchar(a);
+			putchar(b);
+			putchar(' ');
+			putchar(c);
+			putchar(d);
+			if (a != '9' && b != '8')
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
 	}
 	}
+
 	putchar('\n');
 	return (0);
 }

@@ -4,25 +4,27 @@
 /**
  * *_strncpy - a function that copies a string
  * @src: source string
- * @n: number of characters in source
+ * @n: number of characters in source string
  * @dest: destination string
- * Return: destination
+ * Return: dest_start
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
+	char* dest_start = dest;
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
-		dest[i] = src[i];
-	while (i < 0)
+	while (*src && n > 0 )
 	{
-		dest[i] = '\0';
-		i++;
+		*dest++ = *src++;
+		n--;
 	}
-
-	return (dest);
+	while (n > 0)
+	{
+		*dest++ = '\0';
+		n--;
 	}
+	return dest_start;
+}
 
 
 

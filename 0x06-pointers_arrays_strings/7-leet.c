@@ -5,41 +5,30 @@
 
 /**
 * *leet -  a function that encodes a string into 1337
-* @str: string to be encoded
-* Return: str
+* @n: input to be encoded
+* Return: n value
 */
 
-char *leet(char *str)
+char *leet(char *n)
 {
-char *encoded = (char *)malloc(strlen(str) + 1);
 
 int i;
 int j;
 
-(i = 0);
-(j = 0);
+char s1[] = "aAeEoOtTlL";
+char s2[] = "4433007711";
 
-for (; str[i] != '\0'; i++)
+for (i = 0; n[i] != '\0'; i++)
 {
-for (; j < 10; j++)
+for (j = 0; j < 10; j++)
 {
-if (str[i] == encoded[j])
+if (n[i] == s1[j])
 {
-encoded[j] = str[i];
-}
-if (str[i] == 'a' || str[i] == 'A')
-encoded[j] = '4';
-else if (str[i] == 'e' || str[i] == 'E')
-encoded[j] = '3';
-else if (str[i] == 'o' || str[i] == 'O')
-encoded[j] = '0';
-else if (str[i] == 't' || str[i] == 'T')
-encoded[j] = '7';
-else if (str[i] == 'l' || str[i] == 'L')
-encoded[j] = '1';
+n[i] = s2[j];
 }
 }
-return (str);
+}
+return (n);
 }
 
 

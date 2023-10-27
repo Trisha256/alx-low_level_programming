@@ -4,7 +4,14 @@
 #include <ctype.h>
 #include <string.h>
 
+/**
+ * *_strpbrk - entry point
+ * @s: string
+ * @accept: prefix string
+ * Return: strpbrk
+ */
+
 char *_strpbrk(char *s, char *accept)
 {
-	return strpbrk(s, accept);
+	return (strpbrk(s, accept));
 }

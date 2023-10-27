@@ -4,7 +4,12 @@
 #include <ctype.h>
 #include <string.h>
 
+/**
+ * _puts - entry point
+ * @s: string
+ */
+
 void _puts(char *s)
 {
-	return;
+
 }

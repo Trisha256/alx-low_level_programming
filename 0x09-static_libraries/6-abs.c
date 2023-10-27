@@ -4,7 +4,13 @@
 #include <ctype.h>
 #include <string.h>
 
+/**
+ *_abs - entry point
+ * @n: integer
+ * Return: integer
+ */
+
 int _abs(int n)
 {
-	return abs(n);
+	return (abs(n));
 }

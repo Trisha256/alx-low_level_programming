@@ -4,7 +4,13 @@
 #include <ctype.h>
 #include <string.h>
 
+/**
+ * _isalpha - entry point
+ * @c: integer
+ * Return: c
+ */
+
 int _isalpha(int c)
 {
-	return isalpha(c);
+	return (isalpha(c));
 }

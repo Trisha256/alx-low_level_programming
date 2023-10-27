@@ -6,13 +6,13 @@
 
 /**
  * *_memset - entry point
- * @s: string
+ * @s: string 
  * @b: char
- * @n: int
- * Return: s, b, n
+ * @n: int 
+ * return: s, n, b
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	return (s, b, n);
+	return (s);
 }

@@ -5,10 +5,12 @@
 #include <string.h>
 
 /**
- * _puts - entry point
- * @s: string
+ * _isupper - entry point
+ * @c: integer
+ * Return: integer
  */
 
-void _puts(char *s)
+int _isupper(int c)
 {
+	return (c);
 }

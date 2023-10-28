@@ -6,13 +6,13 @@
  * main - a program that adds positive numbers
  * @argc: argument count
  * @argv: array of arguments
- * @sum: addittion of digits
- * Return 0 (success)
+ * Return: 0 (success)
  */
 
 int main(int argc, char *argv[])
 {
-	int i, j; int sum = 0;
+	int i, j;
+	int sum = 0;
 
 	for (i = 1; i < argc; i++)
 	{

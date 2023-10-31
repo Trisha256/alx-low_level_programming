@@ -16,10 +16,12 @@ char *str_concat(char *s1, char *s2)
 	size_t size1 = strlen(s1);
 	size_t size2 = strlen(s2);
 
-	if (s1 == NULL)
+	if (s1 == NULL && s2 != NULL)
 		return (s2);
-	if (s2 == NULL)
+	if (s2 == NULL && s1 != NULL)
 		return (s1);
+	if (s1 && s2 == NULL)
+		return (" ");
 	result = (char *)malloc(size1 + size2 + 1);
 	if (result == NULL)
 		return (NULL);

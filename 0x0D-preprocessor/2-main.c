@@ -1,5 +1,5 @@
 #include "main.h"
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * main - prints the name of the file it was compiled from
@@ -8,13 +8,6 @@
 
 int main(void)
 {
-	const char *FILE = __FILE__;
-
-	while (*FILE != '\0')
-	{
-		_putchar(*FILE);
-		FILE++;
-	}
-	_putchar('\n');
+	printf("%s\n", __FILE__);
 	return (0);
 }

@@ -13,6 +13,9 @@
 int main(int argc, char *argv[])
 {
 	int (*oprt)(int, int);
+	int result;
+	int num1;
+	int num2;
 
 	if (argc != 4)
 	{
@@ -27,6 +30,15 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	printf("%d\n", oprt(atoi(argv[1]), (atoi(argv[3]))));
-	return (0);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+
+	if (num2 == 0 && (argv[2][0] == '/' || argv[2][0] == '%'))
+	{
+		printf("Error: Division by zero\n");
+		return 3;
+	}
+	result = oprt(num1, num2);
+		printf("%d\n", result);
+		return 0;
 }

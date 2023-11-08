@@ -36,9 +36,9 @@ int main(int argc, char *argv[])
 	if (num2 == 0 && (argv[2][0] == '/' || argv[2][0] == '%'))
 	{
 		printf("Error: Division by zero\n");
-		return 3;
+		return (3);
 	}
 	result = oprt(num1, num2);
 		printf("%d\n", result);
-		return 0;
+		return (0);
 }

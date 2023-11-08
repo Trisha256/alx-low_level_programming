@@ -1,5 +1,5 @@
-#ifndef CALC_H
-#define CALC_H
+#ifndef HEADER
+#define HEADER
 
 /**
  * struct op - Struct op

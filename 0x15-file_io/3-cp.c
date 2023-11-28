@@ -36,6 +36,7 @@ int main(int argc, char *argv[])
 	ssize_t _write, _nchars;
 
 	char _buffer[1024];
+
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");

@@ -11,6 +11,7 @@
  * Return: The first index where the value is located,
  *         or -1 if the array is NULL or the value is not found
  */
+
 int linear_search(int *array, size_t size, int value)
 {
 	unsigned int index;

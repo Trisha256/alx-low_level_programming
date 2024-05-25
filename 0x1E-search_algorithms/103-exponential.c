@@ -14,6 +14,7 @@ void print_array(int *array, size_t left, size_t right);
  * Return: The first index where the value is located,
  *         or -1 if the array is NULL or the value is not found
  */
+
 int exponential_search(int *array, size_t size, int value)
 {
 	size_t bound = 1;

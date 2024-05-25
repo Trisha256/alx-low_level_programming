@@ -51,6 +51,7 @@ int exponential_search(int *array, size_t size, int value)
  * Return: The index where the value is located,
  *         or -1 if the value is not found
  */
+
 int binary_search(int *array, size_t left, size_t right, int value)
 {
 	size_t mid;
@@ -79,6 +80,7 @@ int binary_search(int *array, size_t left, size_t right, int value)
  * @left: The left bound of the range
  * @right: The right bound of the range
  */
+
 void print_array(int *array, size_t left, size_t right)
 {
 	size_t i;
